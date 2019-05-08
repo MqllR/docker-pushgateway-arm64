@@ -16,7 +16,6 @@ FROM busybox:1-glibc
 MAINTAINER MqllR <>
 
 COPY --chown=nobody:nogroup --from=0 /pushgateway /bin/pushgateway
-COPY . .
 
 USER nobody
 EXPOSE 9091
